@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK Daily Newsletter - 香港公司行业观察</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇭🇰</text></svg>">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title"><a href="index.html">🇭🇰 HK Daily Newsletter</a></h1>
+                <p class="site-subtitle">每日香港公司行业观察，洞察商业先机</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p>聚焦香港公司注册、合规、税务与商业环境，每日一篇深度观察，助你掌握先机。</p>
+        </section>
+
+        <section class="posts-section">
+            <h2 class="section-title">最新文章</h2>
+            <div id="posts-list"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 HK Daily Newsletter &middot; Powered by <a href="https://github.com/harkue/hk-daily-newletter" target="_blank">WorkBuddy Automation</a></p>
+        </div>
+    </footer>
+
+    <script>
+    // ===== 文章数据（自动化在此添加新文章，加在数组最前面） =====
+    const POSTS = [
+        { date: "2026-05-28", title: "香港公司注册量2026年Q1环比增长12%，这3个信号值得关注", slug: "2026-05-28-hk-company-registration-q1-2026", summary: "Q1注册量攀升背后，出海需求、合规专业化、ESG加速三大信号解读" }
+    ];
+
+    // ===== 渲染文章列表 =====
+    const postsList = document.getElementById('posts-list');
+
+    if (POSTS.length === 0) {
+        postsList.innerHTML = '<div class="empty-state"><p>暂无文章，自动化启动后将每日更新 🚀</p></div>';
+    } else {
+        POSTS.forEach((post, index) => {
+            const card = document.createElement('article');
+            card.className = 'post-card';
+            card.style.animationDelay = `${index * 0.05}s`;
+
+            const dateObj = new Date(post.date);
+            const dateDisplay = dateObj.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+
+            card.innerHTML = `
+                <div class="post-date">${dateDisplay}</div>
+                <h3 class="post-title"><a href="posts/${post.slug}.html">${post.title}</a></h3>
+                <p class="post-summary">${post.summary}</p>
+                <a href="posts/${post.slug}.html" class="read-more">阅读全文 →</a>
+            `;
+            postsList.appendChild(card);
+        });
+    }
+    </script>
+</body>
+</html>
