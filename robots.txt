@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://harkue.github.io/hk-daily-newletter/sitemap.xml
