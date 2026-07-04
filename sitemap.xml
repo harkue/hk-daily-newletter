@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
+        <loc>https://harkue.github.io/hk-daily-newletter/posts/2026-07-04-annual-return-late-penalty.html</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://harkue.github.io/hk-daily-newletter/posts/2026-07-03-secretary-crisis-moments.html</loc>
         <lastmod>2026-07-03</lastmod>
         <changefreq>monthly</changefreq>
@@ -161,7 +167,7 @@
         <loc>https://harkue.github.io/hk-daily-newletter/</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-        <lastmod>2026-07-03</lastmod>
+        <lastmod>2026-07-04</lastmod>
     </url>
     <url>
         <loc>https://harkue.github.io/hk-daily-newletter/posts/2026-06-01-hk-financial-center.html</loc>
