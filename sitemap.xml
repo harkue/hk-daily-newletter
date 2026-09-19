@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
+        <loc>https://harkue.github.io/hk-daily-newletter/posts/2026-09-19-hk-finance-center-future-proof.html</loc>
+        <lastmod>2026-09-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://harkue.github.io/hk-daily-newletter/posts/2026-09-18-q4-compliance-calendar.html</loc>
         <lastmod>2026-09-18</lastmod>
         <changefreq>monthly</changefreq>
